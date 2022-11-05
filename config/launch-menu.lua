@@ -6,30 +6,22 @@ if get_os_name.get_os_name() == "Windows" then
    launch_menu = {
       -- { label = "Ubuntu", args = { "wsl", "-d", "Ubuntu" }, domain = { DomainName = "ubuntu" } },
       {
-         label = "PowerShell Core",
-         args = { "pwsh" },
+         label = "PowerShell",
+         args = { "powershell.exe", "-nologo" },
       },
       {
          label = "Command Prompt",
-         args = { "cmd" },
+         args = { "cmd.exe" },
       },
       {
          label = "Git Bash",
-         args = { "C:\\Users\\kevin\\scoop\\apps\\git\\current\\bin\\bash.exe" },
-      },
-      {
-         label = "Nushell",
-         args = { "nu" },
-      },
-      {
-         label = "PowerShell Desktop",
-         args = { "powershell" },
+         args = { "C:\\Program Files\\Git\\usr\\bin\\bash.exe" },
       },
    }
 else
    launch_menu = {
       { label = "bash", args = { "/usr/bin/bash" } },
-      { label = "fish", args = { "/usr/bin/fish" } },
+      { label = "zsh", args = { "/usr/bin/zsh" } },
    }
 end
 

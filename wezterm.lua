@@ -8,7 +8,7 @@ require("config.right-status").setup()
 require("config.notify").setup()
 require("config.tab-title").setup()
 
-local font_primary = "JetBrainsMono NF"
+local font_primary = "Maple Mono SC NF"
 
 local function font(name, params)
    return wezterm.font(name, params)
@@ -23,7 +23,7 @@ end
 return {
    -- fonts
    font = font(font_primary),
-   font_size = 9,
+   font_size = 11,
 
    -- colour scheme
    colors = custom,
@@ -66,7 +66,7 @@ return {
    window_frame = {
       active_titlebar_bg = "#090909",
       font = font(font_primary, { bold = true }),
-      font_size = 9,
+      font_size = 11,
    },
    automatically_reload_config = true,
    inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
@@ -98,9 +98,9 @@ return {
       {
          name = "WSL:Ubuntu",
          distribution = "Ubuntu",
-         username = "kevin",
-         default_cwd = "/home/kevin",
-         default_prog = { "fish" },
+         username = "tautus",
+         default_cwd = "/home/taurus",
+         default_prog = { "bash" },
       },
    },
 }
